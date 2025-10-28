@@ -3,10 +3,10 @@ package org.example.problems.arrays;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ValidSudokuTest {
+class ValidSudokuTest {
 
     @Test
-    public void isValidSudoku() {
+    void isValidSudoku() {
         char[][] board = new char[][]{
                 {'1','2','.','.','3','.','.','.','.'},
                 {'4','.','.','5','.','.','.','.','.'},
@@ -25,7 +25,7 @@ public class ValidSudokuTest {
     }
 
     @Test
-    public void isNotValidSudoku() {
+    void isNotValidSudoku() {
         char[][] board = new char[][]{
                 {'1','2','.','.','3','.','.','.','.'},
                 {'4','.','.','5','.','.','.','.','.'},
