@@ -1,5 +1,9 @@
 package org.example.problems.stack;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Stack;
+
 /*
     You are given a string s consisting of the following characters: '(', ')', '{', '}', '[' and ']'.
 
@@ -13,6 +17,24 @@ package org.example.problems.stack;
  */
 public class ValidParentheses {
     public boolean isValid(String s) {
-        return false;
+        Stack<Character> stack = new Stack<>();
+        Map<Character, Character> closeToOpenParentheses = new HashMap<>();
+        closeToOpenParentheses.put(')', '(');
+        closeToOpenParentheses.put('}', '{');
+        closeToOpenParentheses.put(']', '[');
+
+        for (Character character : s.toCharArray()) {
+            if (closeToOpenParentheses.containsKey(character)) {
+                if (!stack.isEmpty() && stack.peek() == closeToOpenParentheses.get(character)) {
+                    stack.pop();
+                } else {
+                    return false;
+                }
+            } else {
+                stack.push(character);
+            }
+        }
+
+        return stack.isEmpty();
     }
 }
