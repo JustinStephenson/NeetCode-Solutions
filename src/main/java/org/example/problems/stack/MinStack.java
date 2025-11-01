@@ -1,5 +1,7 @@
 package org.example.problems.stack;
 
+import java.util.Stack;
+
 /*
     Design a stack class that supports the push, pop, top, and getMin operations.
 
@@ -12,23 +14,40 @@ package org.example.problems.stack;
     Each function should run in O(1)O(1) time.
  */
 public class MinStack {
-    public MinStack() {
+    private Stack<Integer> baseStack = new Stack<>();
+    private Stack<Integer> minStack = new Stack<>();
 
+    public MinStack() {
+        this.baseStack = new Stack<>();
+        this.minStack = new Stack<>();
     }
 
     public void push(int val) {
-
+        baseStack.push(val);
+        if (minStack.isEmpty()) {
+            minStack.push(val);
+        } else {
+            minStack.push(Math.min(val, minStack.peek()));
+        }
     }
 
     public void pop() {
-
+        if (baseStack.isEmpty()) {
+            return;
+        }
+        baseStack.pop();
+        minStack.pop();
     }
 
     public int top() {
-        return 0;
+        return baseStack.peek();
     }
 
     public int getMin() {
-        return 0;
+        if (minStack.isEmpty()) {
+            return 0;
+        } else {
+            return minStack.peek();
+        }
     }
 }
