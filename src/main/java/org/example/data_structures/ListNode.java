@@ -37,4 +37,17 @@ public class ListNode {
     public int hashCode() {
         return Objects.hash(val, next);
     }
+
+    public static ListNode of(int... values) {
+        if (values == null || values.length == 0) {
+            return null;
+        }
+        ListNode head = new ListNode(values[0]);
+        ListNode current = head;
+        for (int i = 1; i < values.length; i++) {
+            current.next = new ListNode(values[i]);
+            current = current.next;
+        }
+        return head;
+    }
 }
