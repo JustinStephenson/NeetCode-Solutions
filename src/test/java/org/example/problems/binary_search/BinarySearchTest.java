@@ -21,7 +21,9 @@ class BinarySearchTest {
     static Stream<Arguments> binarySearchTestProvider() {
         return Stream.of(
                 Arguments.of(new int[]{-1,0,2,4,6,8}, 4, 3),
-                Arguments.of(new int[]{-1,0,2,4,6,8}, 3, -1)
+                Arguments.of(new int[]{-1,0,2,4,6,8}, 3, -1),
+                Arguments.of(new int[]{11, 22}, 11, 0),
+                Arguments.of(new int[]{11, 22, 33}, 11, 0)
         );
     }
 }
