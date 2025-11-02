@@ -21,43 +21,19 @@ class InvertBinaryTreeTest {
 
     static Stream<Arguments> invertBinaryTreeTestProvider() {
         return Stream.of(
-                // Input: [1,2,3,4,5,6,7] -> Output: [1,3,2,7,6,5,4]
+                // [1,2,3,4,5,6,7] → [1,3,2,7,6,5,4]
                 Arguments.of(
-                        new TreeNode(1,
-                                new TreeNode(2,
-                                        new TreeNode(4),
-                                        new TreeNode(5)
-                                ),
-                                new TreeNode(3,
-                                        new TreeNode(6),
-                                        new TreeNode(7)
-                                )
-                        ),
-                        new TreeNode(1,
-                                new TreeNode(3,
-                                        new TreeNode(7),
-                                        new TreeNode(6)
-                                ),
-                                new TreeNode(2,
-                                        new TreeNode(5),
-                                        new TreeNode(4)
-                                )
-                        )
+                        TreeNode.of(1, 2, 3, 4, 5, 6, 7),
+                        TreeNode.of(1, 3, 2, 7, 6, 5, 4)
                 ),
 
-                // Input: [3,2,1] -> Output: [3,1,2]
+                // [3,2,1] → [3,1,2]
                 Arguments.of(
-                        new TreeNode(3,
-                                new TreeNode(2),
-                                new TreeNode(1)
-                        ),
-                        new TreeNode(3,
-                                new TreeNode(1),
-                                new TreeNode(2)
-                        )
+                        TreeNode.of(3, 2, 1),
+                        TreeNode.of(3, 1, 2)
                 ),
 
-                // Input: [] -> Output: []
+                // [] → []
                 Arguments.of(null, null)
         );
     }
