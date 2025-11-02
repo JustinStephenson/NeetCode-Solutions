@@ -23,14 +23,14 @@ public class TreeNode {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) {
+    public boolean equals(Object obj) {
+        if (this == obj) {
             return true;
         }
-        if (!(o instanceof TreeNode)) {
+        if (!(obj instanceof TreeNode)) {
             return false;
         }
-        TreeNode other = (TreeNode) o;
+        TreeNode other = (TreeNode) obj;
         return val == other.val
                 && Objects.equals(left, other.left)
                 && Objects.equals(right, other.right);
