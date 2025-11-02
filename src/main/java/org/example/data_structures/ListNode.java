@@ -1,15 +1,10 @@
 package org.example.data_structures;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import java.util.Objects;
 
-@Getter
-@Setter
 public class ListNode {
-    private int val;
-    private ListNode next;
+    public int val;
+    public ListNode next;
 
     public ListNode() {}
     public ListNode(int val) {
