@@ -1,18 +1,13 @@
 package org.example.data_structures;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import java.util.LinkedList;
 import java.util.Objects;
 import java.util.Queue;
 
-@Getter
-@Setter
 public class TreeNode {
-    private int val;
-    private TreeNode left;
-    private TreeNode right;
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
 
     public TreeNode() {}
     public TreeNode(int val) {
@@ -61,8 +56,8 @@ public class TreeNode {
 
             // Left child
             if (values[i] != null) {
-                current.setLeft(new TreeNode(values[i]));
-                queue.offer(current.getLeft());
+                current.left = new TreeNode(values[i]);
+                queue.offer(current.left);
             }
             i++;
 
@@ -72,8 +67,8 @@ public class TreeNode {
 
             // Right child
             if (values[i] != null) {
-                current.setRight(new TreeNode(values[i]));
-                queue.offer(current.getRight());
+                current.right = new TreeNode(values[i]);
+                queue.offer(current.right);
             }
             i++;
         }
