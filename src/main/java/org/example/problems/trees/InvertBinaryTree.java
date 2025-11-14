@@ -7,6 +7,16 @@ import org.example.data_structures.TreeNode;
  */
 public class InvertBinaryTree {
     public TreeNode invertTree(TreeNode root) {
-        return null;
+        if (root == null) {
+            return null;
+        }
+
+        TreeNode leftInvertedTree = invertTree(root.left);
+        TreeNode rightInvertedTree = invertTree(root.right);
+
+        root.left = rightInvertedTree;
+        root.right = leftInvertedTree;
+
+        return root;
     }
 }
