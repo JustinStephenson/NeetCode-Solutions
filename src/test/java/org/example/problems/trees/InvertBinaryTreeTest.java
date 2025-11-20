@@ -19,6 +19,22 @@ class InvertBinaryTreeTest {
         assertEquals(expectedResult, result);
     }
 
+    @ParameterizedTest
+    @MethodSource("invertBinaryTreeTestProvider")
+    void invertBinaryTreeIterativeDFSTest(TreeNode input, TreeNode expectedResult) {
+        InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
+        TreeNode result = invertBinaryTree.invertTreeIterativeDFS(input);
+        assertEquals(expectedResult, result);
+    }
+
+    @ParameterizedTest
+    @MethodSource("invertBinaryTreeTestProvider")
+    void invertBinaryTreeBFSTest(TreeNode input, TreeNode expectedResult) {
+        InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
+        TreeNode result = invertBinaryTree.invertTreeBFS(input);
+        assertEquals(expectedResult, result);
+    }
+
     static Stream<Arguments> invertBinaryTreeTestProvider() {
         return Stream.of(
                 // [1,2,3,4,5,6,7] → [1,3,2,7,6,5,4]
