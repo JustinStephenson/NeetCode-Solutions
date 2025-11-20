@@ -20,9 +20,9 @@ class ValidParenthesesTest {
 
     static Stream<Arguments> isValidParenthesesTestProvider() {
         return Stream.of(
-                Arguments.of("[]", true),
-                Arguments.of("([{}])", true),
-                Arguments.of("[(])", false)
+            Arguments.of("[]", true),
+            Arguments.of("([{}])", true),
+            Arguments.of("[(])", false)
         );
     }
 }

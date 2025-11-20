@@ -21,8 +21,8 @@ class LinkedListCycleTest {
 
     static Stream<Arguments> linkedListCycleTestProvider() {
         return Stream.of(
-                Arguments.of(ListNode.ofWithCycle(1, 1, 2, 3, 4), true),
-                Arguments.of(ListNode.of(1, 2), false)
+            Arguments.of(ListNode.ofWithCycle(1, 1, 2, 3, 4), true),
+            Arguments.of(ListNode.of(1, 2), false)
         );
     }
 }

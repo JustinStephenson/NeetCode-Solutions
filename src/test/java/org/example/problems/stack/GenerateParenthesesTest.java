@@ -21,8 +21,8 @@ class GenerateParenthesesTest {
 
     static Stream<Arguments> generateParenthesesTestProvider() {
         return Stream.of(
-                Arguments.of(1, List.of("()")),
-                Arguments.of(3, List.of("((()))","(()())","(())()","()(())","()()()"))
+            Arguments.of(1, List.of("()")),
+            Arguments.of(3, List.of("((()))", "(()())", "(())()", "()(())", "()()()"))
         );
     }
 }

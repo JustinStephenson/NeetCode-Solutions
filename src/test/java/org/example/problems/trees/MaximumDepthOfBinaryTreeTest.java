@@ -21,11 +21,11 @@ class MaximumDepthOfBinaryTreeTest {
 
     static Stream<Arguments> maximumDepthOfBinaryTreeTestProvider() {
         return Stream.of(
-                // [1,2,3,null,null,4] → depth 3
-                Arguments.of(TreeNode.of(1, 2, 3, null, null, 4), 3),
+            // [1,2,3,null,null,4] → depth 3
+            Arguments.of(TreeNode.of(1, 2, 3, null, null, 4), 3),
 
-                // [] → depth 0
-                Arguments.of(null, 0)
+            // [] → depth 0
+            Arguments.of(null, 0)
         );
     }
 }

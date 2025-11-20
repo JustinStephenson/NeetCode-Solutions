@@ -20,8 +20,8 @@ class ContainerWithMostWaterTest {
 
     static Stream<Arguments> containerWithMostWaterProvider() {
         return Stream.of(
-                Arguments.of(new int[]{1,7,2,5,4,7,3,6}, 36),
-                Arguments.of(new int[]{2,2,2}, 4)
+            Arguments.of(new int[]{1, 7, 2, 5, 4, 7, 3, 6}, 36),
+            Arguments.of(new int[]{2, 2, 2}, 4)
         );
     }
 }

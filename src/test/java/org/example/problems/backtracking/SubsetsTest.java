@@ -21,27 +21,27 @@ class SubsetsTest {
 
     static Stream<Arguments> subsetsTestProvider() {
         return Stream.of(
-                Arguments.of(
-                        new int[]{1, 2, 3},
-                        List.of(
-                                List.of(),
-                                List.of(1),
-                                List.of(2),
-                                List.of(1, 2),
-                                List.of(3),
-                                List.of(1, 3),
-                                List.of(2, 3),
-                                List.of(1, 2, 3)
-                        )
-                ),
-
-                Arguments.of(
-                        new int[]{7},
-                        List.of(
-                                List.of(),
-                                List.of(7)
-                        )
+            Arguments.of(
+                new int[]{1, 2, 3},
+                List.of(
+                    List.of(),
+                    List.of(1),
+                    List.of(2),
+                    List.of(1, 2),
+                    List.of(3),
+                    List.of(1, 3),
+                    List.of(2, 3),
+                    List.of(1, 2, 3)
                 )
+            ),
+
+            Arguments.of(
+                new int[]{7},
+                List.of(
+                    List.of(),
+                    List.of(7)
+                )
+            )
         );
     }
 }

@@ -21,17 +21,17 @@ class DiameterOfBinaryTreeTest {
 
     static Stream<Arguments> diameterOfBinaryTreeTestProvider() {
         return Stream.of(
-                // Input: [1,null,2,3,4,5] → Expected: 3
-                Arguments.of(
-                        TreeNode.of(1, null, 2, 3, 4, 5),
-                        3
-                ),
+            // Input: [1,null,2,3,4,5] → Expected: 3
+            Arguments.of(
+                TreeNode.of(1, null, 2, 3, 4, 5),
+                3
+            ),
 
-                // Input: [1,2,3] → Expected: 2
-                Arguments.of(
-                        TreeNode.of(1, 2, 3),
-                        2
-                )
+            // Input: [1,2,3] → Expected: 2
+            Arguments.of(
+                TreeNode.of(1, 2, 3),
+                2
+            )
         );
     }
 }

@@ -22,7 +22,7 @@ public class BinarySearch {
         }
         int middle = left + (right - left) / 2;
 
-        if(nums[middle] == target) {
+        if (nums[middle] == target) {
             return middle;
         }
 

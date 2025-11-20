@@ -20,8 +20,8 @@ class BestTimeToBuyAndSellStockTest {
 
     static Stream<Arguments> bestTimeToBuyAndSellStockProvider() {
         return Stream.of(
-                Arguments.of(new int[]{10,1,5,6,7,1}, 6),
-                Arguments.of(new int[]{10,8,7,5,2}, 0)
+            Arguments.of(new int[]{10, 1, 5, 6, 7, 1}, 6),
+            Arguments.of(new int[]{10, 8, 7, 5, 2}, 0)
         );
     }
 }

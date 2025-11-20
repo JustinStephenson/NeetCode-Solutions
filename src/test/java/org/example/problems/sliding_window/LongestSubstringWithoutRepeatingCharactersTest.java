@@ -20,11 +20,11 @@ class LongestSubstringWithoutRepeatingCharactersTest {
 
     static Stream<Arguments> longestSubstringWithoutRepeatingCharactersTestProvider() {
         return Stream.of(
-                Arguments.of("zxyzxyz", 3),
-                Arguments.of("xxxx", 1),
-                Arguments.of("aab", 2),
-                Arguments.of("dvdf", 3),
-                Arguments.of("x", 1)
+            Arguments.of("zxyzxyz", 3),
+            Arguments.of("xxxx", 1),
+            Arguments.of("aab", 2),
+            Arguments.of("dvdf", 3),
+            Arguments.of("x", 1)
         );
     }
 }

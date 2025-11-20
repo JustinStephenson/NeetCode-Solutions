@@ -20,8 +20,8 @@ class TwoSumTwoInputArraysIsSortedTest {
 
     static Stream<Arguments> twoSumTwoInputArraysIsSortedProvider() {
         return Stream.of(
-                Arguments.of(new int[]{1,2,3,4}, 3, new int[]{1,2}),
-                Arguments.of(new int[]{-5,-3,0,2,4,6,8}, 5, new int[]{2,7})
+            Arguments.of(new int[]{1, 2, 3, 4}, 3, new int[]{1, 2}),
+            Arguments.of(new int[]{-5, -3, 0, 2, 4, 6, 8}, 5, new int[]{2, 7})
         );
     }
 }

@@ -20,16 +20,16 @@ class SearchTwoDimensionalMatrixTest {
 
     static Stream<Arguments> searchMatrixTestProvider() {
         return Stream.of(
-                Arguments.of(new int[][]{
-                        {1, 2, 4, 8},
-                        {10, 11, 12, 13},
-                        {14, 20, 30, 40}
-                }, 10, true),
-                Arguments.of(new int[][]{
-                        {1,2,4,8},
-                        {10,11,12,13},
-                        {14,20,30,40}
-                }, 15, false)
+            Arguments.of(new int[][]{
+                {1, 2, 4, 8},
+                {10, 11, 12, 13},
+                {14, 20, 30, 40}
+            }, 10, true),
+            Arguments.of(new int[][]{
+                {1, 2, 4, 8},
+                {10, 11, 12, 13},
+                {14, 20, 30, 40}
+            }, 15, false)
         );
     }
 }

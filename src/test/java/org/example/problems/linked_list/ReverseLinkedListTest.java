@@ -21,8 +21,8 @@ class ReverseLinkedListTest {
 
     static Stream<Arguments> reverseLinkedListTestProvider() {
         return Stream.of(
-                Arguments.of(ListNode.of(0, 1, 2, 3), ListNode.of(3, 2, 1, 0)),
-                Arguments.of(null, null)
+            Arguments.of(ListNode.of(0, 1, 2, 3), ListNode.of(3, 2, 1, 0)),
+            Arguments.of(null, null)
         );
     }
 }

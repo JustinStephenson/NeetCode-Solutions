@@ -9,10 +9,13 @@ public class TreeNode {
     public TreeNode left;
     public TreeNode right;
 
-    public TreeNode() {}
+    public TreeNode() {
+    }
+
     public TreeNode(int val) {
         this.val = val;
     }
+
     public TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
         this.left = left;
@@ -29,8 +32,8 @@ public class TreeNode {
         }
         TreeNode other = (TreeNode) obj;
         return val == other.val
-                && Objects.equals(left, other.left)
-                && Objects.equals(right, other.right);
+            && Objects.equals(left, other.left)
+            && Objects.equals(right, other.right);
     }
 
     @Override

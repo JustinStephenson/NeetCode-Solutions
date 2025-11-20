@@ -20,8 +20,8 @@ class ValidPalindromeTest {
 
     private static Stream<Arguments> isPalindromeProvider() {
         return Stream.of(
-                Arguments.of("Was it a car or a cat I saw?"),
-                Arguments.of("No lemon, no melon")
+            Arguments.of("Was it a car or a cat I saw?"),
+            Arguments.of("No lemon, no melon")
         );
     }
 
@@ -35,8 +35,8 @@ class ValidPalindromeTest {
 
     private static Stream<Arguments> isNotPalindromeProvider() {
         return Stream.of(
-                Arguments.of("tab a cat"),
-                Arguments.of("race a car")
+            Arguments.of("tab a cat"),
+            Arguments.of("race a car")
         );
     }
 }

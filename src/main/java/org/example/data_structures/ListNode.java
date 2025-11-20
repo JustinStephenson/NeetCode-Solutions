@@ -6,10 +6,13 @@ public class ListNode {
     public int val;
     public ListNode next;
 
-    public ListNode() {}
+    public ListNode() {
+    }
+
     public ListNode(int val) {
         this.val = val;
     }
+
     public ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
@@ -25,7 +28,7 @@ public class ListNode {
         }
         ListNode other = (ListNode) obj;
         return val == other.val
-                && Objects.equals(next, other.next);
+            && Objects.equals(next, other.next);
     }
 
     @Override
@@ -56,7 +59,7 @@ public class ListNode {
     /**
      * Creates a linked list from the given array of values and introduces a cycle at the specified position.
      *
-     * @param pos The position (0-based index) where the cycle begins in the resulting linked list. If the value is -1, no cycle is created.
+     * @param pos    The position (0-based index) where the cycle begins in the resulting linked list. If the value is -1, no cycle is created.
      * @param values An array of integers used to populate the linked list. If null or empty, returns null.
      * @return The head of the created linked list with or without a cycle, depending on the specified position.
      */

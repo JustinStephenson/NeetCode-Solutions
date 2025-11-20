@@ -21,9 +21,9 @@ class MergeTwoSortedListsTest {
 
     static Stream<Arguments> mergeTwoSortedListsTestProvider() {
         return Stream.of(
-                Arguments.of(ListNode.of(1, 2, 4), ListNode.of(1, 3, 5), ListNode.of(1, 1, 2, 3, 4, 5)),
-                Arguments.of(null, ListNode.of(1, 2), ListNode.of(1, 2)),
-                Arguments.of(null, null, null)
+            Arguments.of(ListNode.of(1, 2, 4), ListNode.of(1, 3, 5), ListNode.of(1, 1, 2, 3, 4, 5)),
+            Arguments.of(null, ListNode.of(1, 2), ListNode.of(1, 2)),
+            Arguments.of(null, null, null)
         );
     }
 }

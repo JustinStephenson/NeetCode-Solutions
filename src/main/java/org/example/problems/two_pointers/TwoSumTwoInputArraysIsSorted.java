@@ -26,6 +26,6 @@ public class TwoSumTwoInputArraysIsSorted {
             }
         }
 
-        return new int[] {};
+        return new int[]{};
     }
 }

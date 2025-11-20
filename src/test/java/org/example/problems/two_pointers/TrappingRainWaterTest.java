@@ -20,7 +20,7 @@ class TrappingRainWaterTest {
 
     static Stream<Arguments> trappingRainWaterProvider() {
         return Stream.of(
-                Arguments.of(new int[]{0,2,0,3,1,0,1,3,2,1}, 9)
+            Arguments.of(new int[]{0, 2, 0, 3, 1, 0, 1, 3, 2, 1}, 9)
         );
     }
 }

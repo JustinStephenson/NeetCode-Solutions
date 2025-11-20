@@ -25,8 +25,8 @@ public class ValidSudoku {
 
                     String squareKey = (row / 3) + "," + (col / 3);
                     if (rowMap.computeIfAbsent(row, key -> new HashSet<>()).contains(board[row][col]) ||
-                            colMap.computeIfAbsent(col, key -> new HashSet<>()).contains(board[row][col]) ||
-                            squareMap.computeIfAbsent(squareKey, key -> new HashSet<>()).contains(board[row][col])) {
+                        colMap.computeIfAbsent(col, key -> new HashSet<>()).contains(board[row][col]) ||
+                        squareMap.computeIfAbsent(squareKey, key -> new HashSet<>()).contains(board[row][col])) {
                         return false;
                     }
 
